@@ -6,5 +6,30 @@
     <title>Weather App</title>
   </head>
 
-  <body></body>
+  <body>
+    <form novalidate>
+      <label for="location">Location:</label>
+      <input
+        type="text"
+        id="location"
+        placeholder="New York"
+        minlength="5"
+        maxlength="50"
+        required
+      />
+
+      <label for="unit">Unit:</label>
+      <select id="unit" required>
+        <option selected>Fahrenheit</option>
+        <option>Celcius</option>
+        <option>Kelvin</option>
+      </select>
+
+      <button>Search</button>
+    </form>
+
+    <span class="error" aria-live="polite"></span>
+
+    <div class="container"></div>
+  </body>
 </html>
