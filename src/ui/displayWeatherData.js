@@ -5,6 +5,7 @@ export default async function displayWeatherData(location, unit) {
   const containerDiv = document.querySelector(".container");
   const errorMessage = document.querySelector("span.error");
 
+  containerDiv.innerHTML = "";
   errorMessage.textContent = "";
 
   const loadingText = document.createElement("h1");
